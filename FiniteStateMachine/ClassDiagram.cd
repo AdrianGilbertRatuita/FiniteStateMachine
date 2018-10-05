@@ -11,15 +11,47 @@
   <Class Name="FiniteStateMachine.Mortal">
     <Position X="3.25" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAEAIAAAAAAAAAAAAAAAKEQAQAQAIAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAEAIAAAAAAAAAAAACAAKEQAQAQAIAQAAAAAAAAAAAA=</HashCode>
       <FileName>Mortal.cs</FileName>
     </TypeIdentifier>
+  </Class>
+  <Class Name="FiniteStateMachine.State">
+    <Position X="10.5" Y="3" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="FiniteStateMachine.State.Start" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>State.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="FiniteStateMachine.State.Update" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>State.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="FiniteStateMachine.State.End" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>State.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAQAAAAAgAAAAAAEAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>State.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Interface Name="FiniteStateMachine.IEntity">
     <Position X="1.25" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
       <FileName>IEntity.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FiniteStateMachine.IState">
+    <Position X="10.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IState.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />
