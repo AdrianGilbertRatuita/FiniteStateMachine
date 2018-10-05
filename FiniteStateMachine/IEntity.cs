@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace FiniteStateMachine
 {
-    class Program
+    public interface IEntity
     {
-        static void Main(string[] args)
-        {
 
+        int EntityID { get; }
+        string EntityName { get; set; }
 
-        }
     }
 }
