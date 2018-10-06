@@ -11,7 +11,7 @@
   <Class Name="StateMachineTesting.Entity.Mortal">
     <Position X="3" Y="4" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ABEAoAAAAAAAAAAAACAALEAAQAQAAAAAAAAAgAAAAAA=</HashCode>
+      <HashCode>ABEAoAAAAAAAAAAAACAALEQAQAQAIAQAAAAAgAAAAAA=</HashCode>
       <FileName>Entity\Mortal.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -32,7 +32,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="StateMachineTesting.StateMachine.RevertibleFiniteStateMachine" Collapsed="true">
-    <Position X="12" Y="1.75" Width="1.5" />
+    <Position X="12" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>StateMachine\RevertibleFiniteStateMachine.cs</FileName>
@@ -41,7 +41,7 @@
   <Class Name="StateMachineTesting.StateMachine.States.SleepyState" Collapsed="true">
     <Position X="4.75" Y="4.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAECAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>StateMachine\States\SleepyState.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -67,7 +67,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="StateMachineTesting.StateMachine.OneWayStateMachine">
-    <Position X="8.5" Y="0.75" Width="1.5" />
+    <Position X="8.5" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAIAAAAAAACAAACAAAAAAEAAACAAABAAAAAA=</HashCode>
       <FileName>StateMachine\OneWayStateMachine.cs</FileName>
@@ -75,18 +75,18 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="StateMachineTesting.StateMachine.BaseFiniteStateMachine">
-    <Position X="10.25" Y="0.75" Width="1.5" />
+    <Position X="10.25" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAABABAAAAAACAQAAAAAAAACAIABAAACCA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAABAAACCA=</HashCode>
       <FileName>StateMachine\BaseFiniteStateMachine.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="StateMachineTesting.StateMachine.StandardFiniteStateMachine" Collapsed="true">
-    <Position X="12" Y="0.75" Width="1.5" />
+  <Class Name="StateMachineTesting.StateMachine.ParallelStates_FiniteStateMachine" Collapsed="true">
+    <Position X="12" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>StateMachine\StandardFiniteStateMachine.cs</FileName>
+      <HashCode>AAAAAAQAAAAAEAAAAgAAAAAABAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>StateMachine\ParsallelStates_FiniteStateMachine.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="StateMachineTesting.Entity.MortalStates.MortalAliveState" Collapsed="true">
@@ -105,8 +105,15 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
+  <Class Name="StateMachineTesting.StateMachine.OneState_FiniteStateMachine" Collapsed="true">
+    <Position X="12" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAACAAAAAAAAACCAAAAAAAAAA=</HashCode>
+      <FileName>StateMachine\OneState_FiniteStateMachine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Interface Name="StateMachineTesting.Entity.IEntity">
-    <Position X="1.25" Y="0.75" Width="1.5" />
+    <Position X="1.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
       <FileName>Entity\IEntity.cs</FileName>
@@ -131,6 +138,13 @@
     <TypeIdentifier>
       <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entity\MortalStates\IMortalState.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="StateMachineTesting.StateMachine.IStateMachine" Collapsed="true">
+    <Position X="10.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>StateMachine\IStateMachine.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Delegate Name="StateMachineTesting.StateMachine.Enter" Collapsed="true">

@@ -8,6 +8,10 @@ using StateMachineTesting.StateMachine;
 
 namespace StateMachineTesting.StateMachine
 {
+
+    /// <summary>
+    /// A State machine that can only go one way
+    /// </summary>
     public class OneWayStateMachine : IStateMachine
     {
 

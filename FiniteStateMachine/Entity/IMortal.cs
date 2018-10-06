@@ -8,6 +8,22 @@ using StateMachineTesting.StateMachine.States;
 
 namespace StateMachineTesting.Entity
 {
+
+    /// <summary>
+    /// IMortal Interface
+    /// Interface for Mortal Classes
+    /// <see cref="HP"/>
+    /// <see cref="Hunger"/>
+    /// <see cref="Fatique"/>
+    /// <see cref="Stress"/>
+    /// <see cref="Name"/>
+    /// <see cref="Alive"/>
+    /// <see cref="LivingStates"/>
+    /// <see cref="NeedsStates"/>
+    /// <see cref="SetupLivingStates"/>
+    /// <see cref="SetupNeedsStates"/>
+    /// </summary>
+
     public interface IMortal
     {
 
@@ -19,11 +35,12 @@ namespace StateMachineTesting.Entity
         string Name { get; }
         bool Alive { get; }
         OneWayStateMachine LivingStates { get; }
-        StandardFiniteStateMachine NeedsStates { get; }
+        ParallelStates_FiniteStateMachine NeedsStates { get; }
 
         //
         void SetupLivingStates();
         void SetupNeedsStates();
 
     }
+
 }

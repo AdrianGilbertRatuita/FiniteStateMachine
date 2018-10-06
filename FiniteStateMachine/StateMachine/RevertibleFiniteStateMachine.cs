@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace StateMachineTesting.StateMachine
 {
-    public class RevertibleFiniteStateMachine : BaseFiniteStateMachine
+    /// <summary>
+    /// A Revertible Finite State Machine class
+    /// that can rever back to a previous state
+    /// </summary>
+    public class RevertibleFiniteStateMachine : OneState_FiniteStateMachine
     {
 
+        // Determines if instance can revert to previous state
         private bool Revertable;
 
         public RevertibleFiniteStateMachine(bool CanRevert) : base()
@@ -18,6 +23,7 @@ namespace StateMachineTesting.StateMachine
 
         }
 
+        // Revert to previous state
         public void RevertState()
         {
 

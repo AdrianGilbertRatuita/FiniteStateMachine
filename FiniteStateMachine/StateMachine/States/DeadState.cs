@@ -8,8 +8,6 @@ namespace StateMachineTesting.StateMachine.States
 {
     public class DeadState : BaseState
     {
-
-
         protected DeadState()
         {
 

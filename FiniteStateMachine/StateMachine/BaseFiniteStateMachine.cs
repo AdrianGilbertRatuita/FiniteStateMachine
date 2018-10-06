@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace StateMachineTesting.StateMachine
 {
+
+    /// <summary>
+    /// Base Finite State Machine with basic FiniteStateMachine functions
+    /// </summary>
     public abstract class BaseFiniteStateMachine : IStateMachine
     {
 
         // All Possible States
         public List<IState> States { get; protected set; }
-        public IState CurrentState { get; protected set; }
-        public IState PreviousState { get; protected set; }
 
         public BaseFiniteStateMachine()
         {
@@ -34,10 +36,29 @@ namespace StateMachineTesting.StateMachine
 
         }
 
-        public virtual void RemoveState(IState StateToRemove)
+        public void RemoveState(string StateName)
         {
 
-            States.Remove(StateToRemove);
+            int StateIndex = -1;
+
+            for (int i = 0; i < States.Count; i++)
+            {
+
+                if (States[i].Name == StateName)
+                {
+
+                    StateIndex = i;
+
+                }
+
+            }
+
+            if (StateIndex != -1)
+            {
+
+                States.RemoveAt(StateIndex);
+
+            }
 
         }
 
@@ -45,51 +66,6 @@ namespace StateMachineTesting.StateMachine
         {
 
             States.Clear();
-
-        }
-
-        public virtual void EnterState()
-        {
-
-            CurrentState.Start();
-
-        }
-
-        public virtual void UpdateState()
-        {
-
-            CurrentState.Update();
-
-        }
-
-        public virtual void ExitState()
-        {
-
-            CurrentState.End();
-
-        }
-
-        public virtual void ChangeState(IState NewState)
-        {
-
-            // Make sure NewState is in States List
-            // and NewState is owned by the same Source
-            if (States.Contains(NewState))
-            {
-
-                // Exit Current State
-                CurrentState.End();
-
-                // Current State is now Previous State
-                PreviousState = CurrentState;
-
-                // Passed State is now Current State
-                CurrentState = NewState;
-
-                // Current State Start
-                CurrentState.Start();
-
-            }
 
         }
 

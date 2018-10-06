@@ -35,7 +35,7 @@ namespace StateMachineTesting.Entity
 
         public OneWayStateMachine LivingStates { get; set; }
 
-        public StandardFiniteStateMachine NeedsStates { get; set; }
+        public ParallelStates_FiniteStateMachine NeedsStates { get; set; }
 
 
         // Constructor Chain
@@ -77,6 +77,7 @@ namespace StateMachineTesting.Entity
 
         public void SetupNeedsStates()
         {
+
 
 
         }

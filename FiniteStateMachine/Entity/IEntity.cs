@@ -6,6 +6,14 @@ using System.Threading.Tasks;
 
 namespace StateMachineTesting.Entity
 {
+
+    /// <summary>
+    /// Basic IEntity Interface
+    /// <para>
+    /// <see cref="EntityID"/>,
+    /// <see cref="EntityName"/>
+    /// </para>
+    /// </summary>
     public interface IEntity
     {
 

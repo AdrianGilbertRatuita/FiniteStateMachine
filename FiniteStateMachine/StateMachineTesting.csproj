@@ -48,11 +48,13 @@
     <Compile Include="Entity\MortalStates\IMortalState.cs" />
     <Compile Include="Entity\MortalStates\MortalAliveState.cs" />
     <Compile Include="Entity\MortalStates\MortalDeadState.cs" />
+    <Compile Include="Entity\MortalStates\MortalHungryState.cs" />
     <Compile Include="StateMachine\BaseFiniteStateMachine.cs" />
     <Compile Include="StateMachine\IStateMachine.cs" />
     <Compile Include="StateMachine\OneWayStateMachine.cs" />
     <Compile Include="NonStaticMain.cs" />
-    <Compile Include="StateMachine\StandardFiniteStateMachine.cs" />
+    <Compile Include="StateMachine\ParsallelStates_FiniteStateMachine.cs" />
+    <Compile Include="StateMachine\OneState_FiniteStateMachine.cs" />
     <Compile Include="StateMachine\StateDelegates.cs" />
     <Compile Include="StateMachine\RevertibleFiniteStateMachine.cs" />
     <Compile Include="Entity\IEntity.cs" />

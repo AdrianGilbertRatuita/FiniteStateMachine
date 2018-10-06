@@ -11,8 +11,6 @@ namespace StateMachineTesting.StateMachine
     {
 
         List<IState> States { get; }
-        IState CurrentState { get; }
-        IState PreviousState { get; }
 
     }
 
