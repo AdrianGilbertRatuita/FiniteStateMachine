@@ -1,58 +1,158 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="FiniteStateMachine.Entity">
-    <Position X="1.25" Y="3" Width="1.5" />
+  <Class Name="StateMachineTesting.Entity.BaseEntity">
+    <Position X="1.25" Y="4" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAACABAAAAAAgAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
-      <FileName>Entity.cs</FileName>
+      <HashCode>AAAAAAACABAAEAAAgAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\BaseEntity.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="FiniteStateMachine.Mortal">
-    <Position X="3.25" Y="3" Width="1.5" />
+  <Class Name="StateMachineTesting.Entity.Mortal">
+    <Position X="3" Y="4" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAEAIAAAAAAAAAAAACAAKEQAQAQAIAQAAAAAAAAAAAA=</HashCode>
-      <FileName>Mortal.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="FiniteStateMachine.State">
-    <Position X="10.5" Y="3" Width="1.5" />
-    <NestedTypes>
-      <Delegate Name="FiniteStateMachine.State.Start" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>State.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Delegate>
-      <Delegate Name="FiniteStateMachine.State.Update" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>State.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Delegate>
-      <Delegate Name="FiniteStateMachine.State.End" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>State.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Delegate>
-    </NestedTypes>
-    <TypeIdentifier>
-      <HashCode>AAAAAACAAAAAAAQAAAAAgAAAAAAEAAAAIAAAAAAAAAA=</HashCode>
-      <FileName>State.cs</FileName>
+      <HashCode>ABEAoAAAAAAAAAAAACAALEAAQAQAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Entity\Mortal.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Interface Name="FiniteStateMachine.IEntity">
+  <Class Name="StateMachineTesting.StateMachine.BaseState">
+    <Position X="6.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAACAAAAAAAAAAoAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StateMachine\BaseState.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="StateMachineTesting.StateMachine.States.HungryState" Collapsed="true">
+    <Position X="4.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>StateMachine\States\HungryState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StateMachineTesting.StateMachine.RevertibleFiniteStateMachine" Collapsed="true">
+    <Position X="12" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StateMachine\RevertibleFiniteStateMachine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StateMachineTesting.StateMachine.States.SleepyState" Collapsed="true">
+    <Position X="4.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StateMachine\States\SleepyState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StateMachineTesting.StateMachine.States.StressedState" Collapsed="true">
+    <Position X="4.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAECAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StateMachine\States\StressedState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StateMachineTesting.StateMachine.States.AliveState" Collapsed="true">
+    <Position X="6.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StateMachine\States\AliveState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StateMachineTesting.StateMachine.States.DeadState" Collapsed="true">
+    <Position X="4.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StateMachine\States\DeadState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StateMachineTesting.StateMachine.OneWayStateMachine">
+    <Position X="8.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAACAAACAAAAAAEAAACAAABAAAAAA=</HashCode>
+      <FileName>StateMachine\OneWayStateMachine.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="StateMachineTesting.StateMachine.BaseFiniteStateMachine">
+    <Position X="10.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABABAAAAAACAQAAAAAAAACAIABAAACCA=</HashCode>
+      <FileName>StateMachine\BaseFiniteStateMachine.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="StateMachineTesting.StateMachine.StandardFiniteStateMachine" Collapsed="true">
+    <Position X="12" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StateMachine\StandardFiniteStateMachine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StateMachineTesting.Entity.MortalStates.MortalAliveState" Collapsed="true">
+    <Position X="6.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAQAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\MortalStates\MortalAliveState.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="StateMachineTesting.Entity.MortalStates.MortalDeadState" Collapsed="true">
+    <Position X="4.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAABACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\MortalStates\MortalDeadState.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="StateMachineTesting.Entity.IEntity">
     <Position X="1.25" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
-      <FileName>IEntity.cs</FileName>
+      <FileName>Entity\IEntity.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="FiniteStateMachine.IState">
-    <Position X="10.5" Y="0.75" Width="1.5" />
+  <Interface Name="StateMachineTesting.StateMachine.IState">
+    <Position X="6.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAACAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StateMachine\IState.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="StateMachineTesting.Entity.IMortal">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABEAIAAAAAAAAAAAAAAABAQAQAAAIAQAAAAAgAAAAAA=</HashCode>
+      <FileName>Entity\IMortal.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="StateMachineTesting.Entity.MortalStates.IMortalState">
+    <Position X="4.75" Y="6.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>IState.cs</FileName>
+      <FileName>Entity\MortalStates\IMortalState.cs</FileName>
     </TypeIdentifier>
   </Interface>
+  <Delegate Name="StateMachineTesting.StateMachine.Enter" Collapsed="true">
+    <Position X="4.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StateMachine\StateDelegates.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="StateMachineTesting.StateMachine.Execute" Collapsed="true">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StateMachine\StateDelegates.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="StateMachineTesting.StateMachine.Exit" Collapsed="true">
+    <Position X="4.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StateMachine\StateDelegates.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

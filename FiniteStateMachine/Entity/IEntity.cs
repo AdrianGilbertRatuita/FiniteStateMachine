@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FiniteStateMachine
+namespace StateMachineTesting.Entity
 {
     public interface IEntity
     {

@@ -6,30 +6,32 @@ using System.Threading.Tasks;
 using System.Timers;
 using System.Diagnostics;
 
-namespace FiniteStateMachine
+namespace StateMachineTesting
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
 
-            float Time = 0;
-            DateTime Now = DateTime.Now;
+            //float Time = 0;
+            //DateTime Now = DateTime.Now;
 
-            while (Time > -1)
-            {
+            //while (Time > -1)
+            //{
 
-                if (Now.Second != DateTime.Now.Second)
-                {
+            //    if (Now.Second != DateTime.Now.Second)
+            //    {
 
-                    Time++;
-                    Now = DateTime.Now;
+            //        Time++;
+            //        Now = DateTime.Now;
 
-                }
+            //    }
 
-                Console.WriteLine(Time);
+            //    Console.WriteLine(Time);
 
-            }
+            //}
+            NonStaticMain NewMain = new NonStaticMain();
+            NewMain.Main();
 
         }
     }
